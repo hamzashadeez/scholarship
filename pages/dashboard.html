@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="../js/tailwind.js"></script>
+    <script src="../js/dashboard.js" defer></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body class="bg-gray-100 flex-1">
+    <header class="bg-white py-2 px-4 flex items-center justify-between shadow-sm w-full sticky top-0 left-0">
+    <div class="flex items-center gap-2">
+        <div class="bg-green-100 h-10 w-10 rounded-full"><img alt="" src="../img/niaja.jpeg"></div>
+        <div class="text-green-900 font-semibold text-lg uppercase">DYDA Scholarship</div>
+    </div>
+    <a href="../index.html" class="bg-gray-100 p-2 rounded-sm hover:bg-green-200">Back</a>
+    </header>
+    <div class="flex flex-col md:flex-row p-4 md:gap-7 mb-4">
+        <div class="flex-1  p-2">
+            <h5 class="font-semibold">Statistics</h5>
+            <div class="mt-3">
+                <h5 class="font-semibold text-green-900 text-sm mb-1">Schools</h5>
+                <div class="bg-white py-3 px-3">
+                    <div class="bg-gray-50 py-3 px-5 rounded-md mb-3">Umaru Musa Yardua University</div>
+                    <div class="bg-gray-50 py-3 px-5 rounded-md mb-3">Alqalam University Katsina State</div>
+                    <div class="bg-gray-50 py-3 px-5 rounded-md mb-3">Federal University Dutsin-ma Katsina</div>
+                </div>
+                <div class="bg-white py-3 px-3 mt-4 flex item-center justify-between">
+                    <div class="bg-gray-50 rounded flex flex-col px-3 item-center justify-center h-24 w-24">
+                        <h2 id="total" class="text-3xl">10</h2>
+                        <p class="text-sm">Total</p>
+                    </div>
+                    <div class="bg-green-50 rounded flex flex-col px-3 item-center justify-center h-24 w-24">
+                        <h2 id="total" class="text-3xl text-green-800">02</h2>
+                        <p class="text-sm text-green-800">Approved</p>
+                    </div>
+                    <div class="bg-red-50 rounded flex flex-col px-3 item-center justify-center h-24 w-24">
+                        <h2 id="total" class="text-3xl text-red-800">03</h2>
+                        <p class="text-sm text-red-800">Rejected</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- second -->
+        <div class="flex-1 p-2">
+            <h5 class="font-semibold">Submitted Applications</h5>
+            <div class="mt-3">
+                <h5 class="font-semibold text-green-900 text-sm mb-1">Student's Data</h5>
+                <div class="bg-white py-3 px-3">
+                    <table class="table" id="table">
+                        <thead>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Certificate</td>
+                        </thead>
+                        <tbody id="table-body">
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-white py-3 px-3 mt-4 flex item-center">
+                    <img alt="" src="../img/niaja.jpeg" class="w-24 h-24" >
+                    <div class="p-3">
+                        <div class="text-muted text-3xl">DYDA SCHOLARSHIP</div>
+                        <div class="text-muted text-lg">Final year Software Project</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white px-4 py-1 w-full h-10 absolute bottom-0 left-0">
+        <marquee behavior="" direction="">I dedicate this software to my parents and to my humble supervisor, All praise be to Allah (s.w.a)</marquee>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <script src="../js/tailwind.js"></script>
+</head>
+<body class="bg-green-50 relative">
+    <header class="bg-white py-2 px-4 flex items-center justify-between shadow-sm w-full sticky top-0 left-0">
+        <div class="flex items-center gap-2">
+            <div class="bg-green-100 h-10 w-10 rounded-full"><img alt="" src="../img/niaja.jpeg"></div>
+            <div class="text-green-900 font-semibold text-lg uppercase">DYDA Scholarship</div>
+        </div>
+       
+    </header>
+    <h1 class="text-center font-bold text-2xl mb-7 mt-4 text-green-900">Apply</h1>
+    <div class="flex w-full mx-4 md:w-2/5 md:mx-auto p-5">
+        <form id="form" class="flex flex-col w-full">
+            <label for="name" class="mt-4 mb-1 text-xs">Enter Full Name here</label>
+            <input required id="name" placeholder="Enter name" class="px-3 py-1  shadow-sm rounded">
+            <label for="email" class="mt-4 mb-1 text-xs">Enter Email Address</label>
+            <input required id="email" placeholder="Enter email" class="px-3 py-1 shadow-sm rounded">
+            <label for="phone" class="mt-4 mb-1 text-xs">Enter Phone Number</label>
+            <input required id="phone" placeholder="Enter phone number" class="px-3 py-1 shadow-sm rounded">
+            <label for="state" class="mt-4 mb-1 text-xs">Enter State Of Origin</label>
+            <input required id="state" placeholder="Enter State Of Origin" class="px-3 py-1 shadow-sm rounded">
+            <label for="certificate" class="mt-4 mb-1 text-xs">Certificate Obtained</label>
+            <input required id="certificate" placeholder="e.g Bsc Ed Chemistry" class="px-3 py-1 shadow-sm rounded">
+            <label for="school" class="mt-4 mb-1 text-xs">School Attended</label>
+            <input required id="school" placeholder="e.g Alqalam University Katsina" class="px-3 py-1 shadow-sm rounded">
+            <label for="nin" class="mt-4 mb-1 text-xs">NIN</label>
+            <input required id="nin" placeholder="e.g 12812892323" class="px-3 py-1 shadow-sm rounded">
+            <label for="address" class="mt-4 mb-1 text-xs">Permanent Home Address</label>
+            <input required id="address" placeholder="Home Address" class="px-3 py-1 shadow-sm rounded">
+            <button class="text-white bg-blue-800 mt-4 py-2 rounded" type="submit">Apply</button>
+            <a href="../index.html" class="text-black bg-red-400 mt-4 py-2 rounded text-center" >Cancel</a>
+        </form>
+    </div>
+    <script src="../js/apply.js"></script>
+</body>
+</html>
