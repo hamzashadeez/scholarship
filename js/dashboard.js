@@ -19,7 +19,7 @@ window.onload = () => {
 
 const table = document.getElementById("table-body");
 const data = JSON.parse(localStorage.getItem("@data"));
-console.log(data);
+// console.log(data);
 
 const render = (data) => {
   table.innerHTML = "";

@@ -2,6 +2,33 @@ const url = "https://mee-backend.vercel.app/dyda";
 window.onload = () => {
   const id = JSON.parse(localStorage.getItem("@id"));
   getData(id);
+
+  document.getElementById("approveBtn").addEventListener("click", () => {
+    // call a function
+    fetch(`https://mee-backend.vercel.app/dyda/approve/${id}`, {
+      method: "PUT",
+      body: {},
+    })
+      .then(() => {
+        alert("Successfully Approved ✅");
+        document.getElementById("status").innerHTML = "Approved";
+        // window.location.href = "../pages/dashboard.html";
+      })
+      .catch((err) => alert(err));
+  });
+  document.getElementById("rejectBtn").addEventListener("click", () => {
+    // call a function
+    fetch(`https://mee-backend.vercel.app/dyda/reject/${id}`, {
+      method: "PUT",
+      body: {},
+    })
+      .then(() => {
+        alert("Successfully Rejected ❌");
+        document.getElementById("status").innerHTML = "Rejected";
+        // window.location.href = "../pages/dashboard.html";
+      })
+      .catch((err) => alert(err));
+  });
 };
 
 const getData = async (id) => {
@@ -26,10 +53,3 @@ const renderElementData = (data) => {
   document.getElementById("status").innerHTML = data.status;
   document.getElementById("noOfKids").innerHTML = data.noOfChildren;
 };
-
-document.getElementById("approveBtn").addEventListener("click", () => {
-  // call a function
-});
-document.getElementById("rejectBtn").addEventListener("click", () => {
-  // call a function
-});
