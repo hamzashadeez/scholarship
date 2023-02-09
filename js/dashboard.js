@@ -14,7 +14,6 @@ const getdata = async () => {
 };
 
 window.onload = () => {
-  console.log("yee");
   getdata();
 };
 
@@ -25,10 +24,19 @@ console.log(data);
 const render = (data) => {
   table.innerHTML = "";
   data.map((d) => {
-    console.log("dddd: ", d);
-    let html = `<tr><td>${d.fullname}</td><td>${d.email}</td><td>${d.certificate}</td></tr>`;
+    let html = `<tr><td>${d.fullname}</td><td>${d.email}</td><td><button data-id=${d._id} class="btn bg-green-100 text-sm viewButton">Open</button></td></tr>`;
     table.innerHTML += html;
   });
+
+  const viewButtons = document.querySelectorAll(".viewButton");
+  for (let i = 0; i < viewButtons.length; i++) {
+    const btn = viewButtons[i];
+    btn.addEventListener("click", () => {
+      console.log(btn.dataset.id);
+      localStorage.setItem("@id", JSON.stringify(btn.dataset.id));
+      window.location.href = "../pages/detail.html";
+    });
+  }
 };
 
 const stat = (data) => {

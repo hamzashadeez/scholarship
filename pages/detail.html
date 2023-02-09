@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <script src="../js/tailwind.js"></script>
+</head>
+<body class="h-screen bg-gray-100">
+    <div class="bg-white p-3 shadow-sm text-center uppercase">Details</div>
+    <div class=" w-full mx-4 md:w-2/5 md:mx-auto p-3">
+        <!-- data -->
+        <div class="bg-white shadow-sm mb-2 rounded w-full p-3 flex ">
+            <div class="bg-gray-100 flex items-center justify-center w-14 rounded-full h-14">
+                <img src="../img/user.png" alt="avatar" class="w-10 h-10" >
+            </div>
+            <div class=" flex-1 pl-5">
+                <p class="font-semibold mb-3 mt-1 text-sm">Name: <span class="font-normal" id="name">Hamza Shadeez</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">Email: <span class="font-normal" id="email">email@gmail.com</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">Address: <span class="font-normal" id="address">Shola Quaters Katsina</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">School: <span class="font-normal" id="school">UMYUK</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">Phone: <span class="font-normal" id="phone">0839482398</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">NIN: <span class="font-normal" id="nin">0348839482398</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">State: <span class="font-normal" id="state">Katsina</span></p>
+                <hr>
+                <p class="font-semibold mb-3 mt-1 text-sm">Number Of Wife: <span class="font-normal" id="noOfWifes">1</span></p>
+                <p class="font-semibold mb-3 mt-1 text-sm">Number Of Children: <span class="font-normal" id="noOfKids">1</span></p>
+                <hr>
+                <p class="font-semibold mb-3 mt-1 text-sm">Certificate: <span class="font-normal" id="certificate">Bsc Computer Science</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- status -->
+    <div class=" w-full mx-4 md:w-2/5 md:mx-auto p-3 mb-2">
+        <div class="bg-white shadow-sm mb-5 rounded w-full p-3 ">
+            <div class="text-center text-sm uppercase text-gray-600 w-full">Current Application Status</div>
+            <div id="status" class="text-center text-xl uppercase my-2 text-green-700 w-full font-semibold">Approved</div>
+        </div>
+        <div class="bg-white shadow-sm mb-5 rounded w-full p-3 ">
+            <div class="text-center text-sm uppercase text-gray-600 w-full">Controls</div>
+            <div class="flex items-center justify-between mt-3">
+                <button id="approveBtn" class="px-4 py-1 rounded bg-green-200 text-green-800">Approve</button>
+                <button id="rejectBtn" class="px-4 py-1 rounded bg-red-200 text-red-800">Reject</button>
+                <a href="../pages/dashboard.html" class="px-4 py-1 rounded bg-gray-200 text-gray-800">Back</a>
+
+            </div>
+        </div>
+    </div>
+
+<script src="../js/details.js"></script>
+</body>
+</html>
